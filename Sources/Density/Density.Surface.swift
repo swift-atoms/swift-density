@@ -10,10 +10,4 @@ extension Density.Surface: Quantity.Kind {
 extension Density.Surface {
     /// An amount of this kind, its scalar in kilograms per square metre.
     public typealias Value<Scalar> = Tagged<Density.Surface, Scalar>
-
-    /// An amount of this kind given in kilograms per square metre.
-    @inlinable
-    public static func amount<Scalar>(_ scalar: Scalar) -> Value<Scalar> {
-        amount(scalar)
-    }
 }

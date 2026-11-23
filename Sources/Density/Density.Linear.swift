@@ -10,10 +10,4 @@ extension Density.Linear: Quantity.Kind {
 extension Density.Linear {
     /// An amount of this kind, its scalar in kilograms per metre.
     public typealias Value<Scalar> = Tagged<Density.Linear, Scalar>
-
-    /// An amount of this kind given in kilograms per metre.
-    @inlinable
-    public static func amount<Scalar>(_ scalar: Scalar) -> Value<Scalar> {
-        amount(scalar)
-    }
 }
